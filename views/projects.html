@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Zach J Murphy - Projects</title>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/globals.css" rel="stylesheet" type="text/css" />
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
   <meta name="description"
     content="Hello My name is Zach J Murphy. I do a bit of everything I make iOS apps with SwiftUI, websites in Next.js and React, servers in Nodejs & Express." />
   <meta property="og:image" content="https://i.imgur.com/0E9EVrk.png" />
@@ -14,13 +16,23 @@
 </head>
 
 <body>
+
+  <section class="sideNav">
+    <a href="/" class="sbButton sbbInactive sbBtn2" data-sbbLabel="Home"></a>
+    <a href="/about" class="sbButton sbbInactive sbBtn2" data-sbbLabel="About"></a>
+    <a href="/gallery" class="sbButton sbbInactive sbBtn3" data-sbbLabel="Gallery"></a>
+    <a class="sbButton sbbActive sbBtn1">
+      <div class="sbbaInd"></div>
+    </a>
+  </section>
+
   <div class="chbTile chbTileCustom">
     <img src="https://i.imgur.com/3l8vEXH.png" class="chbTileIconBlur">
     <img src="https://i.imgur.com/3l8vEXH.png" class="chbTileIcon">
     <div class="chbGrad"></div>
     <h1 class="name">Projects</h1>
     <div class="about">
-      <p class="example">Hi, I'm Zach J Murphy. I am from Canada, and I like to mess around with photography as a hobby.
+      <p class="about-text">Hi, I'm Zach J Murphy. I am from Canada, and I like to mess around with photography as a hobby.
         My favourite
         thing to do is listen to music on Spotify.
         <br><br>
