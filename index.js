@@ -3,16 +3,6 @@ const app = express();
 
 app.use(express.static('public'));
 
-// Set up Rate Limiter: Maximum of five requests per minute
-var RateLimit = require('express-rate-limit');
-var limiter = new RateLimit({
-  windowMs: 1*60*1000, // 1 minute
-  max: 5
-});
-
-// Apply Rate Limiter to all Requests
-app.use(limiter);
-
 // Home Page
 app.get('/', (req, res) => {
     res.sendFile(process.cwd() + '/views/index.html')
