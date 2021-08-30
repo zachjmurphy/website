@@ -1,5 +1,5 @@
-@media (prefers-color-scheme: light){
-    :root{
+@media (prefers-color-scheme: light) {
+    :root {
         --site-background: rgb(243, 243, 243);
         --page-background: rgb(249, 249, 249);
         --page-border: rgb(229, 229, 229);
@@ -28,8 +28,8 @@
     }
 }
 
-@media (prefers-color-scheme: dark){
-    :root{
+@media (prefers-color-scheme: dark) {
+    :root {
         --site-background: rgb(32, 32, 32);
         --page-background: rgb(39, 39, 39);
         --page-border: rgb(29, 29, 29);
@@ -53,7 +53,7 @@
         --menu-back: rgba(0, 0, 0, 0.8);
         --menu-sep: rgba(255, 255, 255, 0.1);
         --menu-btn: rgba(255, 255, 255, 0.2);
-        
+
         --button-semitransp: rgba(0, 0, 0, 0.8);
     }
 }
@@ -68,6 +68,6 @@
     src: url(../fonts/fluent_reg.ttf);
 }
 
-.hidden{
+.hidden {
     display: none;
 }
