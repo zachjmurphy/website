@@ -18,9 +18,8 @@ app.get('/projects', (req, res) => {
   res.sendFile(process.cwd() + '/views/projects.html')
 });
 
-// Gallery Page
-app.get('/gallery', (req, res) => {
-  res.sendFile(process.cwd() + '/views/gallery.html')
+app.use(function (req, res, next) {
+  res.status(404).sendFile(process.cwd() + '/views/error.html')
 });
 
 // Listen & Start Server
